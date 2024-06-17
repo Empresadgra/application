@@ -1,6 +1,6 @@
 const Navbar = (): JSX.Element => {
   return (
-    <nav className="w-full p-10 flex justify-between">
+    <nav className="w-full p-5 flex justify-between border-b-2">
       <div>
         <h2>NEGOCIO</h2>
       </div>
