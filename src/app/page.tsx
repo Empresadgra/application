@@ -1,4 +1,5 @@
 import { Dashboard } from "@/components/Dashboard";
+import { Inventory } from "@/components/Inventory";
 import { Navbar } from "@/components/Navbar";
 import { Sidebar } from "@/components/Sidebar";
 
@@ -12,7 +13,7 @@ export default function Home() {
         </section>
         <section className="flex flex-col items-center w-full lg:max-w-[85%] min-h-full">
           <Navbar />
-          <Dashboard />
+          <Inventory />
         </section>
       </main>
     </>
