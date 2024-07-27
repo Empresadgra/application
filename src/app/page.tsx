@@ -9,8 +9,8 @@ export default function Home() {
       {/*<Invoice />*/}
       <main className="flex min-h-screen w-full">
         <section className="hidden lg:block "></section>
-        <section className="flex flex-col justify-between items-center w-full">
-          <div className="flex flex-col items-center w-full">
+        <section className="flex flex-col justify-between items-center w-full min-h-full">
+          <div className="flex flex-col items-center w-full overflow-auto h-full">
             <Navbar />
             <Dashboard />
           </div>

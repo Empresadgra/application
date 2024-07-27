@@ -1,6 +1,7 @@
 import { CalendarIcon, MagnifyingGlassIcon } from "@heroicons/react/16/solid";
 import { StatisticCard } from "./StatisticCard";
 import { ActionButton } from "./ActionButton";
+import { DailySales } from "./DailySales";
 
 const Dashboard = (): JSX.Element => {
   return (
@@ -15,7 +16,7 @@ const Dashboard = (): JSX.Element => {
       </div>
       <div className="mt-6 mb-7 ml-2 rounded-lg flex justify-between items-center">
         <div>
-          <h1 className="text-2xl font-normal">Hola, Usuario usuario</h1>
+          <h1 className="text-2xl font-normal">Hola, Usuario</h1>
           <p className="text-gray-500">Bienvenido a tu negocio digital</p>
         </div>
         <button
@@ -36,6 +37,7 @@ const Dashboard = (): JSX.Element => {
         <ActionButton action={"Nueva factura"}/>
         <ActionButton action={"Registrar producto"}/>
       </div>
+      <DailySales />
     </div>
   );
 }
