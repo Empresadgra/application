@@ -1,5 +1,4 @@
 import { Dashboard } from "@/components/Dashboard";
-import { Inventory } from "@/components/Inventory";
 import { Navbar } from "@/components/Navbar";
 import { Sidebar } from "@/components/Sidebar";
 
@@ -7,13 +6,11 @@ export default function Home() {
   return (
     <>
       {/*<Invoice />*/}
-      <main className="flex min-h-screen">
-        <section className="hidden lg:block min-w-[15%]">
-          <Sidebar />
-        </section>
-        <section className="flex flex-col items-center w-full lg:max-w-[85%] min-h-full">
+      <main className="flex min-h-screen w-full">
+        <section className="hidden lg:block "></section>
+        <section className="flex flex-col items-center w-full">
           <Navbar />
-          <Inventory />
+          <Dashboard />
         </section>
       </main>
     </>

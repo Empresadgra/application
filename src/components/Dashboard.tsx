@@ -1,13 +1,31 @@
+import { CalendarIcon, MagnifyingGlassIcon } from "@heroicons/react/16/solid";
 import { StatisticCard } from "./StatisticCard";
 
 const Dashboard = (): JSX.Element => {
   return (
-    <div className="p-10">
-      <div className="mt-2 mb-5 bg-blue-300 text-white rounded-lg p-5">
-        <h1 className="text-2xl font-bold">Hola, nombre</h1>
-        <p>Bienvenido</p>
+    <div className="p-4 w-full">
+      <div className="relative">
+        <input
+          className="p-3 bg-gray-100 rounded-2xl w-full"
+          type="text"
+          placeholder="Buscar productos, secciones o relacionado"
+        />
+        <MagnifyingGlassIcon className="size-6 absolute right-3 top-3 text-gray-500" />
       </div>
-      <div className="flex flex-col items-center gap-4 lg:grid lg:grid-cols-2 lg:grid-rows-2">
+      <div className="mt-6 mb-7 ml-2 rounded-lg flex justify-between items-center">
+        <div>
+          <h1 className="text-2xl font-normal">Hola, Usuario usuario</h1>
+          <p className="text-gray-500">Bienvenido a tu negocio digital</p>
+        </div>
+        <button
+          className="flex gap-1 bg-gray-100 text-gray-500 rounded-2xl p-2"
+          type="button"
+        >
+          <p>26/07/24</p>
+          <CalendarIcon className="size-6 text-gray-500" />
+        </button>
+      </div>
+      <div className="flex items-center gap-4 overflow-x-auto">
         <StatisticCard />
         <StatisticCard />
         <StatisticCard />

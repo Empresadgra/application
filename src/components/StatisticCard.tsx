@@ -1,14 +1,16 @@
 const StatisticCard = (): JSX.Element => {
   return (
-    <div className="min-h-[150px] w-full max-w-[500px] min-w-[288px] bg-gray-300 rounded-lg flex flex-col justify-between p-5 text-gray-950">
-      <div className="flex gap-8">
-        <div>
-          <h3 className="text-xl font-bold">Hola contenedor</h3>
-          <p>El total de gastos incurridos en los ultimos 7 dias</p>
+    <div className="min-h-[150px] w-full max-w-[500px] min-w-[350px] bg-red-500 rounded-2xl flex flex-col justify-between text-white">
+      <div className="flex gap-8 p-4">
+        <div className="flex flex-col">
+          <h3 className="text-2xl mb-2">Hola contenedor</h3>
+          <p className="text-slate-200 font-light">El total de gastos incurridos en los ultimos 7 dias</p>
         </div>
-        <div className="p-1 min-w-10 bg-gray-800 rounded-lg"></div>
+        <div className="p-1 min-w-10 max-h-10 bg-gray-100  bg-opacity-40 rounded-lg"></div>
       </div>
-      <p className="font-bold text-black self-end text-2xl">$5,670.21</p>
+      <div className="flex justify-end p-2 bg-gray-100 bg-opacity-20">
+        <p className="font-semibold text-2xl pr-3">$5,670.21</p>
+      </div>
     </div>
   );
 }
