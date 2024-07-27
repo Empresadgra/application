@@ -1,5 +1,6 @@
 import { CalendarIcon, MagnifyingGlassIcon } from "@heroicons/react/16/solid";
 import { StatisticCard } from "./StatisticCard";
+import { ActionButton } from "./ActionButton";
 
 const Dashboard = (): JSX.Element => {
   return (
@@ -25,11 +26,15 @@ const Dashboard = (): JSX.Element => {
           <CalendarIcon className="size-6 text-gray-500" />
         </button>
       </div>
-      <div className="flex items-center gap-4 overflow-x-auto">
+      <div className="flex items-center gap-3 overflow-x-auto">
         <StatisticCard />
         <StatisticCard />
         <StatisticCard />
         <StatisticCard />
+      </div>
+      <div className="flex mt-6 mb-6 gap-2">
+        <ActionButton action={"Nueva factura"}/>
+        <ActionButton action={"Registrar producto"}/>
       </div>
     </div>
   );

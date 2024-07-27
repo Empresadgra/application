@@ -1,6 +1,6 @@
 const StatisticCard = (): JSX.Element => {
   return (
-    <div className="min-h-[150px] w-full max-w-[500px] min-w-[350px] bg-red-500 rounded-2xl flex flex-col justify-between text-white">
+    <div className="min-h-[150px] w-full max-w-[500px] min-w-[375px] bg-red-500 rounded-2xl flex flex-col justify-between text-white">
       <div className="flex gap-8 p-4">
         <div className="flex flex-col">
           <h3 className="text-2xl mb-2">Hola contenedor</h3>
